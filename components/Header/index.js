@@ -10,4 +10,32 @@
 // And add it to the DOM in the .headerContainer component
 //Typo in `header/index.js`  line 10:  the css selector is actually named: `header-container`
 
-function Header() {}
+
+function Header() {
+    // creating elements:
+    const header = document.createElement('div');
+    const span1 = document.createElement('span');
+    const head1 = document.createElement('h1');
+    const span2 = document.createElement('span');
+
+    // adding classes
+
+    header.classList.add('header');
+    span1.classList.add('date');
+    span2.classList.add('temp');
+
+    // adding text
+
+    span1.textContent = 'MARCH 28, 2019';
+    head1.textContent = 'Lambda Times';
+    span2.textContent = '98°';
+
+    // appending elements
+
+    header.appendChild(span1);
+    header.appendChild(head1);
+    header.appendChild(span2);
+
+    return document.querySelector('.header-container').appendChild(header);
+}
+Header();
