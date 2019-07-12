@@ -8,5 +8,6 @@
 //    <span class="temp">98°</span>
 //  </div >
 // And add it to the DOM in the .headerContainer component
+//Typo in `header/index.js`  line 10:  the css selector is actually named: `header-container`
 
 function Header() {}
